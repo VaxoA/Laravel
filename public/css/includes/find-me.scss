@@ -1,0 +1,13 @@
+.talkGrid {
+  display: block;
+  margin-bottom: 25px;
+  line-height: 1.4em;
+}
+
+@media (min-width: 1024px) {
+  .talkGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+    margin-bottom: 10px;
+  }
+}

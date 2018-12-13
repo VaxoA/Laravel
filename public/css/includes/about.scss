@@ -1,0 +1,22 @@
+.content .scroll {
+  min-height: 120%;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.aboutme .selfie {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.4);
+  margin-right: 20px;
+}
+
+.aboutme .job h1 {
+  text-align: left;
+}

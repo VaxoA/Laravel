@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+html,
+body,
+#app {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+body,
+#app,
+.fullHeight {
+    height: 100%;
+}
+
+body {
+    font-family: 'Tenor+Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    content: " ";
+    position: absolute;
+    background-color: #f5f5f5;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/859573/FloweryDisasterByDanaRounds5.svg);
+    background-size: cover, 102% 100%, 100% 100%;
+    background-position: center center;
+    background-repeat: repeat;
+    overflow: auto;
+}
+
+.beautiful {
+    width: 100%;
+    max-width: 2048px;
+    min-height: 100%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    margin-top: 0;
+}
+
+.gearText {
+    margin: 0px;
+    font-family: 'Crimson Text', serif;
+}
+
+p,
+blockquote,
+cite {
+    margin: 5px 0;
+    line-height: 1.4em;
+    font-size: 1em;
+}
+
+a,
+a:visited {
+    transition: opacity 300ms ease;
+    display: inline-block;
+    color: #0094c6;
+    font-family: 'Tenor+Sans', serif;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 20px auto;
+    font-size: 0.8em;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: none;
+    border: 1px solid;
+}
+
+.center {
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.1em;
+}
+
+.clr {
+    clear: both;
+}
+
+.iconBlock {
+    width: 80%;
+    margin: 15px auto 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.gear,
+.home {
+    width: 100%;
+    height: 100%;
+    animation: Gear-spin infinite 30s linear;
+}
+
+.icon,
+.home {
+    padding: 4px;
+    width: 40px;
+    height: 34px;
+    fill: #222;
+    stroke: #222;
+}
+
+.icon:hover,
+.home:hover {
+    opacity: 0.7;
+}
+
+/**
+ * Transitions
+ */
+
+@keyframes Gear-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+body:after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.animatedBg {
+    width: 100%;
+    max-width: 2048px;
+    min-height: 100%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.badge {
+    width: 260px;
+    height: 260px;
+    color: #88e2ff;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 20px;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    fill: #222;
+}
+
+.badge .gearText {
+    position: absolute;
+    margin-top: -10px;
+    text-align: center;
+    height: 50px;
+    width: calc(100% - 40px);
+    top: 50%;
+    z-index: 2;
+    font-size: 1.9em;
+    text-shadow: none;
+}
+
+.colors .center {
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.9);
+    transition: background-color 1500ms linear, box-shadow 1500ms 1000ms linear;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.4), -10px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.nocolors .center {
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0);
+    transition: background-color 1500ms 1500ms linear, box-shadow 1000ms 500ms linear;
+    box-shadow: 10px 0px 20px transparent, -10px 0px 20px transparent;
+}
+
+@media (max-width: 640px) {
+    .colors .center {
+        transition: background-color 1500ms linear, box-shadow 1500ms 500ms linear;
+    }
+    .nocolors .center {
+        transition: background-color 1000ms 500ms linear, box-shadow 750ms linear;
+    }
+}
+
+.contentBlock .iconBlock {
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #ccc;
+}
+
+.contentBlock,
+.nocolors .contentBlock {
+    width: 90%;
+    max-width: 1024px;
+    min-width: 320px;
+    min-height: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    display: block;
+    border-radius: none;
+    background-color: rgba(245, 245, 245, 0.7);
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.4), -10px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.colors .contentBlock {
+    background-color: rgba(245, 245, 245, 0.95);
+}
+
+.contentBlock p {
+    clear: both;
+}
+
+.content {
+    padding: 20px;
+    overflow: auto;
+}
+
+.content h1 {
+    text-align: center;
+    clear: both;
+    font-size: 2.4em;
+    margin: 20px 0 10px 0;
+}
+
+.content h2 {
+    padding-top: 0px;
+    paddingBottom: 10px;
+    margin-bottom: 0;
+    font-size: 1.6em;
+    font-family: 'Crimson Text', serif;
+}
+
+.content blockquote {
+    margin: 20px 0 10px 20px;
+    padding: 0 20px;
+    text-align: justify;
+    border-left: 3px solid #0094c6;
+    display: block;
+    position: relative;
+}
+
+.content .cite {
+    font-style: italic;
+    padding: 0 0 20px 20px;
+}
+
+.content .cite:last-of-type {
+    padding-bottom: 0;
+}
+
+.content .scroll {
+    min-height: 120%;
+}
+
+.aboutme {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.aboutme .selfie {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+    margin-right: 20px;
+}
+
+.aboutme .job h1 {
+    text-align: left;
+}
+
+.talkGrid {
+    display: block;
+    margin-bottom: 25px;
+    line-height: 1.4em;
+}
+
+@media (min-width: 1024px) {
+    .talkGrid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 3fr 1fr;
+        grid-template-columns: 1fr 1fr 3fr 1fr;
+        margin-bottom: 10px;
+    }
+}
+
+.iconBlock {
+    width: 80%;
+    margin: 15px auto 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.gear,
+.home {
+    width: 100%;
+    height: 100%;
+    animation: Gear-spin infinite 30s linear;
+}
+
+.icon,
+.home {
+    padding: 4px;
+    width: 40px;
+    height: 34px;
+    fill: #222;
+    stroke: #222;
+}
+
+.icon:hover,
+.home:hover {
+    opacity: 0.7;
+}
+
+/**
+ * Transitions
+ */
+
+@keyframes Gear-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}

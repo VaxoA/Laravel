@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Tenor+Sans');
+@import "./variables";
+
+html, body, #app {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  min-height: 100%;
+  position:relative;
+}
+
+body, #app, .fullHeight {
+  height: 100%;
+}
+
+body {
+  font-family: 'Tenor+Sans', sans-serif;
+  padding: 0;
+  margin:0;
+  content: " ";
+  position: absolute;
+  background-color: #f5f5f5;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/859573/FloweryDisasterByDanaRounds5.svg);
+  background-size: cover, 102% 100%, 100% 100%;
+  background-position: center center;
+  background-repeat: repeat;
+  overflow: auto;
+}
+
+
+.beautiful {
+  width: 100%;
+  max-width: 2048px;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Crimson Text', serif;
+  margin-top: 0;
+}
+
+.gearText {
+  margin: 0px;
+  font-family: 'Crimson Text', serif;
+}
+
+p, blockquote, cite {
+  margin: 5px 0;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+
+a, a:visited {
+  transition: opacity 300ms ease;
+  display: inline-block;
+  color: $color-link;
+  font-family: 'Tenor+Sans', serif;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 20px auto;
+  font-size: 0.8em;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  box-shadow: none;
+  border: 1px solid;
+}
+
+.center {
+  text-align: center;
+  line-height: 1.3em;
+  font-size: 1.1em;
+}
+
+.clr {
+  clear: both;
+}
